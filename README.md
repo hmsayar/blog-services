@@ -1,6 +1,6 @@
 # blogproject-services
 
-A comprehensive backend application built using a microservices architecture with Express.js, consisting of three main services: `blogposts-service`, `comments-service`, and `users-service`. An API gateway routes requests to the appropriate service. The project also includes a shared folder containing common functions, data structures, and middlewares used across the services.
+Backend application built using a microservices architecture with Express.js, consisting of three main services: `blogposts-service`, `comments-service`, and `users-service`. An API gateway routes requests to the appropriate service. The project also includes a shared folder containing common functions, data structures, and middlewares used across the services.
 
 The blogposts-service handles basic CRUD functionalities for blog posts, with its own MongoDB database, and utilizes Amazon S3 for storing images within blog posts. The comments-service manages basic CRUD functionalities for comments, with its own MongoDB database. The two services communicate using RabbitMQ to ensure data consistency, such as checking for the existence of a blog post when adding a new comment or deleting related comments when a blog post is removed.
 
