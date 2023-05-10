@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.env
+.DS_Store
+docker-compose
+docker-compose.yml
+docker-compose.yaml
+createDummy.js

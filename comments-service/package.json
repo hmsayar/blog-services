@@ -1,0 +1,27 @@
+{
+  "name": "comments-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app",
+    "dev": "nodemon src/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hmsayar/shared": "^1.1.8",
+    "amqplib": "^0.10.3",
+    "axios": "^1.3.5",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "redis": "^4.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
