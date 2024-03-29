@@ -6,27 +6,6 @@ The blogposts-service handles basic CRUD functionalities for blog posts, with it
 
 The `users-service` manages user authentication, login, refresh token, sign-up, and user verification, and has its own MongoDB database. Redis is used for caching user information and the last 10 blog posts for faster access by the `comments-service` and `blogposts-service`. If the required user information is not found in Redis, the services send an HTTP request to the `users-service`. SendGrid is utilized for sending verification emails, JWT for authentication, and bcrypt for password hashing. User roles are also included in the JWT tokens.
 
-## Motivation
-
-The primary motivation behind this project was to expand my knowledge and gain hands-on experience with a variety of widely-used technologies and techniques in the world of backend development. By implementing a microservices architecture using Express.js, I aimed to develop a deeper understanding of how different services can work together.
-
-In addition, this project offered an opportunity to explore the use of several popular tools and libraries, such as MongoDB, Redis, RabbitMQ, SendGrid, JWT, and bcrypt. By applying these technologies, I was able to gain practical experience in building a robust and secure backend application.
-
-It allowed me to gain insights into building microservices, handling data consistency, and managing user authentication in a real-world scenario. 
-
-## Technologies Used
-
-This microservice-based backend application leverages the following technologies:
-
-1. Express.js
-2. MongoDB
-3. Mongoose
-4. Redis
-5. RabbitMQ
-6. JWT: JSON Web Tokens for user authentication and authorization.
-7. Bcrypt: A robust library for hashing passwords, ensuring the security of user data.
-8. SendGrid: A cloud-based email delivery service used to send verification emails during user registration.
-
 
 ## Installation and Setup
 
@@ -94,3 +73,4 @@ Update the import statements in all controller files by replacing:
 10. Navigate to each service's folder and run `npm install`
 
 11. Navigate to each service's folder and run `npm start`
+
